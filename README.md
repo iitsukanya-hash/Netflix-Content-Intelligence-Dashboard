@@ -71,6 +71,7 @@ These observations describe the available dataset and do not establish viewer pr
 
 - IMDb scores represent one rating source and may not reflect Netflix viewers' preferences.
 - Findings are limited to the information available in the dataset.
+- The 5,267 titles exclude entries with no IMDb vote count (16 of 5,283 in the source file). About 43% of titles have no age certification, so that comparison covers only the rated titles.
 - Further analysis could examine Movies and TV Shows separately and compare additional rating sources.
 
 ## How to Open the Project
