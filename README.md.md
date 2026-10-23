@@ -1,219 +1,91 @@
-# 🎬 Netflix Content Intelligence Dashboard 📊
+# Netflix Content Intelligence Dashboard
 
-## 🌟 Project Overview
+An interactive Power BI dashboard for exploring Netflix's content catalog through content type, release year, IMDb ratings, runtime, and age certification.
 
-**Netflix Content Intelligence Dashboard** is an interactive data
-analytics project designed to explore and understand Netflix's content
-catalog through data-driven insights.
+## Project Overview
 
-The project analyzes **content growth, content type, IMDb ratings,
-runtime, and age certifications** to identify patterns and trends within
-the Netflix catalog.
+This project analyzes Netflix's content catalog to understand its composition and explore patterns across release years, content types, ratings, and age-certification categories. The dashboard presents key metrics and visualizations to make the data easier to explore and interpret.
 
-🎯 The dashboard focuses on turning raw content data into clear,
-business-oriented insights through interactive visualizations.
+## Business Objectives
 
-------------------------------------------------------------------------
+- Analyze the distribution of Movies and TV Shows.
+- Explore content distribution across release years.
+- Examine IMDb ratings across different release years.
+- Analyze runtime patterns in the catalog.
+- Compare average IMDb scores across age-certification categories.
 
-## 🎯 Project Objectives
+## Tools & Technologies
 
-This project aims to answer key analytical questions:
+- **Power BI Desktop:** Dashboard development and data visualization
+- **Power Query:** Data preparation and transformation
+- **Data Analytics:** Exploratory analysis, KPI reporting, and insight generation
 
--   🎬 How is Netflix's catalog distributed between **Movies and
-    Shows**?
--   📈 How has Netflix's content catalog grown over the years?
--   ⭐ How do IMDb ratings vary across different years?
--   ⏱️ What patterns can be observed in average content runtime?
--   🔞 How do IMDb ratings differ across age-certification groups?
--   👥 What can the certification and rating patterns tell us about
-    audience preferences?
+## Dataset Overview
 
-------------------------------------------------------------------------
+- **Number of titles:** 5,267
+- **Key attributes:** Title, Content Type, Release Year, IMDb Score, Runtime, and Age Certification
 
-## 🛠️ Tools & Technologies
+The dataset provides information about Netflix titles and supports analysis of content distribution, ratings, and runtime patterns.
 
-  Tool / Technology       Purpose
-  ----------------------- ------------------------------------------
-  📊 Power BI             Interactive dashboard development
-  🧮 DAX                  KPI calculations and analytical measures
-  🐍 Python               Data analysis and preparation
-  🐼 Pandas               Data manipulation
-  📈 Data Visualization   Insight communication
-  🧹 EDA                  Exploratory data analysis
+## Key Performance Indicators
 
-------------------------------------------------------------------------
+| KPI | Value |
+|---|---:|
+| Total Titles | 5,267 |
+| Average Runtime | 79.31 minutes |
+| Average IMDb Score | 6.53 |
+| Movies Share | 64.38% |
 
-## 📂 Dataset Overview
+## Key Findings
 
-The dataset contains information about Netflix titles, including:
+**1. Content Type Distribution**
 
--   🎞️ Title
--   🎭 Content Type
--   📅 Release Year
--   ⭐ IMDb Score
--   ⏱️ Runtime
--   🔞 Age Certification
+Movies account for approximately 64.38% of the catalog, representing a larger share than TV Shows.
 
-The dataset contains approximately **5.26K titles**.
+**2. Release-Year Analysis**
 
-------------------------------------------------------------------------
+The dashboard explores how titles are distributed across release years to identify patterns in the catalog.
 
-## 📊 Dashboard KPIs
+**3. IMDb Rating Analysis**
 
-The dashboard highlights important summary metrics:
+IMDb ratings are examined across release years to explore changes and differences in average scores.
 
--   🎬 **Total Titles:** \~5.26K
--   ⏱️ **Average Runtime:** 79.31 minutes
--   ⭐ **Average IMDb Score:** 6.53
--   🎥 **Movies:** 64.38% of the catalog
+**4. Runtime Analysis**
 
-------------------------------------------------------------------------
+The dashboard analyzes runtime to understand the distribution of content duration across the catalog.
 
-## 📈 Dashboard Analysis
+**5. Age Certification Analysis**
 
-### 🎬 1. Content Type Distribution
+Average IMDb scores are compared across age-certification categories to identify differences between groups.
 
-Movies represent the majority of the Netflix catalog, accounting for
-approximately **64.38%** of the available titles.
+## Business Insights
 
-This indicates that Netflix's catalog has historically maintained a
-stronger presence of movie content compared with shows.
+- **Content Mix:** Movies represent the larger share of the analyzed catalog.
+- **Catalog Composition:** Release-year analysis helps explore how the dataset is distributed over time.
+- **Rating Patterns:** Comparing IMDb scores across categories helps identify areas for further investigation.
+- **Runtime Patterns:** Runtime analysis provides an overview of content duration within the catalog.
 
-------------------------------------------------------------------------
+These observations describe the available dataset and do not establish viewer preferences or explain the causes of rating differences.
 
-### 📅 2. Content Growth by Release Year
+## Limitations & Future Scope
 
-The analysis shows a significant expansion of Netflix's content catalog
-during the **2000s and later years**.
+- IMDb scores represent one rating source and may not reflect Netflix viewers' preferences.
+- Findings are limited to the information available in the dataset.
+- Further analysis could examine Movies and TV Shows separately and compare additional rating sources.
 
-📌 **Insight:** Netflix's catalog has expanded considerably over time,
-reflecting the platform's increasing content scale.
+## How to Open the Project
 
-------------------------------------------------------------------------
+1. Download `netflix pb 0910.pbix` from this repository.
+2. Open the file in Power BI Desktop.
+3. Explore the dashboard and its visualizations.
 
-### ⭐ 3. IMDb Rating Trend
-
-IMDb scores were analyzed across different release years.
-
-📌 **Insight:** Ratings fluctuate across years without showing a
-consistent linear trend, suggesting that content quality varies across
-different release periods.
-
-------------------------------------------------------------------------
-
-### ⏱️ 4. Average Runtime Analysis
-
-Average runtime was analyzed across release years.
-
-📌 **Insight:** Runtime fluctuates in earlier periods and becomes
-comparatively more stable in recent years, generally remaining around
-the **90--100 minute range** for many recent periods.
-
-------------------------------------------------------------------------
-
-### 🔞 5. Age Certification Analysis
-
-IMDb scores were compared across different age-certification groups.
-
-📌 **Insight:** Different certification groups show variations in
-average IMDb ratings, indicating differences in content characteristics
-and audience preferences.
-
-------------------------------------------------------------------------
-
-## 🔍 Key Insights
-
-### 💡 Major Findings
-
-📌 **Movies dominate the catalog**\
-Movies account for approximately **64.38%** of the analyzed Netflix
-titles.
-
-📌 **Strong catalog expansion**\
-Netflix's content volume increased significantly in the 2000s and later
-years.
-
-📌 **Ratings vary across time**\
-IMDb ratings fluctuate across release years rather than following a
-clear upward or downward trend.
-
-📌 **Runtime has evolved**\
-Average runtime shows greater variation in earlier periods and becomes
-more stable in recent years.
-
-📌 **Certification matters**\
-Different age-certification groups show different average IMDb scores,
-highlighting variation in audience-oriented content.
-
-------------------------------------------------------------------------
-
-## 💼 Business / Analytical Recommendations
-
-Based on the analysis:
-
--   🎯 Focus on **quality-driven content expansion** rather than relying
-    only on catalog volume.
--   👥 Analyze high-performing certification groups to understand
-    audience preferences.
--   🎬 Maintain a balanced content strategy across Movies and Shows.
--   ⭐ Use rating and certification patterns to support future content
-    planning.
--   📈 Monitor content growth alongside quality metrics to avoid
-    volume-only expansion.
-
-------------------------------------------------------------------------
-
-## 📸 Dashboard Preview
-
-> Add your Netflix dashboard screenshot here.
-
-``` text
-📊 Netflix Content Intelligence Dashboard
-
-Content Growth  |  Content Type  |  IMDb Ratings
-Runtime Trends   |  Certifications |  Interactive Filters
-```
-
-------------------------------------------------------------------------
-
-## 🧠 Skills Demonstrated
-
-This project demonstrates practical experience in:
-
--   🐍 Python
--   🐼 Pandas
--   🧹 Data Cleaning
--   🔍 Exploratory Data Analysis
--   📊 Power BI
--   🧮 DAX
--   📈 Data Visualization
--   💡 Business Insight Generation
--   🎯 Data Storytelling
-
-------------------------------------------------------------------------
-
-## 🚀 Project Outcome
-
-This project demonstrates how a raw entertainment dataset can be
-transformed into an interactive analytical dashboard that communicates
-**content trends, rating patterns, runtime behavior, and
-certification-based insights**.
-
-The project strengthened practical skills in **data preparation,
-exploratory analysis, dashboard development, visualization, and
-business-oriented storytelling**.
-
-------------------------------------------------------------------------
-
-## 👩‍💻 Author
+## Author
 
 **Sukanya Saha**
 
-🔬 Research Scholar, CSIR-IICT Hyderabad\
-🎓 M.Sc. Chemistry, IIT Madras\
-📊 Data Analytics & Data Science Enthusiast
+PhD Research Scholar, CSIR–IICT Hyderabad  
+M.Sc. Chemistry, IIT Madras
 
-------------------------------------------------------------------------
-
-⭐ **If you found this project interesting, feel free to explore the
-repository and dashboard!**
+- [LinkedIn](https://www.linkedin.com/in/sukanya-saha-921a20295)
+- [GitHub](https://github.com/iitsukanya-hash)
+- [Portfolio](https://sukanya-portfolio-rust.vercel.app/)
